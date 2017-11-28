@@ -15,6 +15,21 @@ gradientView.layer.addSublayer(gradientLayer)
 gradientView.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
 ```
 
+gradient up-down:
+
+```ruby
+gradientLayer.startPoint = CGPoint(x: 0, y: 0)
+gradientLayer.endPoint = CGPoint(x: 0, y: 1)
+```
+
+
+gradient down-up:
+
+```ruby
+gradientLayer.startPoint = CGPoint(x: 0, y: 1)
+gradientLayer.endPoint = CGPoint(x: 0, y: 0)
+```
+
 
 see the result below:
 
